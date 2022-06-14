@@ -1,0 +1,23 @@
+{
+  "liveServer.settings.port": 5501,
+  "path-intellisense.mappings": {
+    "@": "${workspaceFolder}/src"
+  },
+  // & ESLint
+  "eslint.alwaysShowStatus": true,
+  "eslint.workingDirectories": [
+    {
+      "mode": "auto"
+    }
+  ],
+  "eslint.validate": [
+    "vue",
+    "javascript",
+    "javascriptreact",
+    "typescriptreact"
+  ],
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
