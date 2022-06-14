@@ -1,3 +1,5 @@
+import './App.scoped.scss';
+
 function App() {
   return (
     <div className="App">
