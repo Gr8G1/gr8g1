@@ -4,7 +4,7 @@ const CracoAlias = require('craco-alias');
 module.exports = {
   devServer: {
     compress: true,
-    port: 8080,
+    port: 8081,
     open: false,
     historyApiFallback: true
   },

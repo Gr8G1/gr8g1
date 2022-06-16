@@ -1,1 +1,6 @@
-# Gr8G1
+### :grinning:
+### Interest
+  * N/D;
+
+### N/D;
+  * [ ] License => [Choosea license](https://choosealicense.com/)
