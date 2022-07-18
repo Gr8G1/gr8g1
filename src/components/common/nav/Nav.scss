@@ -1,0 +1,18 @@
+.nav { position: absolute; left: 0; right: 0; top: 0; width: 100%; height: 100%; margin: 0 auto;
+  .navList { display: flex; flex-direction: column; justify-content: space-between; align-items: center; width: inherit; height: inherit;
+    li { overflow: hidden; display: flex; position: relative; width: inherit; height: inherit; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; border-bottom: 1px solid #000;
+      &::after { content: ''; display: block; position: absolute; left: 0; top: 0; right: 0; bottom: 0; z-index: 1; width: 100%; height: 100%; transition: transform .3s ease-in-out; }
+      &:hover::after { transform: scale(1.16); }
+      &.active { color: var(--text-point-color); }
+
+      &.main::after { background: url('/assets/images/bg.png') no-repeat center / cover; }
+      &.portfolio::after { background: url('/assets/images/bg.png') no-repeat center / cover; }
+      &.snippets::after { background: url('/assets/images/bg.png') no-repeat center / cover; }
+      &.logs::after { background: url('/assets/images/bg.png') no-repeat center / cover; }
+
+      button { position: relative; z-index: 2; border: 0; background: transparent; color: inherit; font-size: calc(100vw / 24); font-weight: 600;
+        span { display: inline-block; color: inherit; font-size: inherit; font-weight: inherit; }
+      }
+    }
+  }
+}

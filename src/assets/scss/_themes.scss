@@ -1,0 +1,33 @@
+@mixin light-mode {
+  --text-color: var(--black);
+  --text-point-color: var(--red);
+  --background-color: var(--white);
+
+  color: var(--text-color);
+  // ... theme light
+}
+
+@mixin dark-mode {
+  --text-color: var(--white);
+  --text-point-color: var(--orange);
+  --background-color: var(--black);
+
+  color: var(--text-color);
+
+  // ... theme dark
+}
+
+html[data-6="light-mode"] { @include light-mode; }
+html[data-theme="dark-mode"] { @include dark-mode; }
+
+@media (prefers-color-scheme: light) {
+  html {
+    @include light-mode;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    @include dark-mode;
+  }
+}

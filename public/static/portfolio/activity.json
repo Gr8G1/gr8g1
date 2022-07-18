@@ -1,0 +1,29 @@
+{
+  "activity": [
+    {
+      "name": "Data Structure & Algorithm",
+      "provider": "Udemy",
+      "date": ["2021-06", "2022-07"]
+    },
+    {
+      "name": "Understanding TypeScript",
+      "provider": "Udemy",
+      "date": ["2021-05", "2022-06"]
+    },
+    {
+      "name": "React The Complete Guide",
+      "provider": "Udemy",
+      "date": ["2020-07", "2020-08"]
+    },
+    {
+      "name": "Vue The Complete Guide",
+      "provider": "Udemy",
+      "date": ["2019-12", "2020-01"]
+    },
+    {
+      "name": "Front-end 개발자 1기",
+      "provider": "VanillaCoding",
+      "date": ["2019-12", "2020-01"]
+    }
+  ]
+}

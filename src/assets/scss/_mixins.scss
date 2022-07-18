@@ -16,13 +16,13 @@
 
 @mixin response($breakpoint) {
   @if $breakpoint == "mobile" {
-    @media (max-width: 767px) {
+    @media (max-width: 800px) {
       @content;
     }
   }
 
   @else if $breakpoint == "tablet" {
-    @media (min-width: 768px) and (max-width: 1079px)  {
+    @media (min-width: 800px) and (max-width: 1079px)  {
       @content;
     }
   }
@@ -32,4 +32,11 @@
       @content;
     }
   }
+}
+
+@mixin boxShape($color: --white) {
+  &:before,
+  &:after { content:''; display: block; position: absolute; border-style: solid; border-color: var(#{$color}); width: 60px; height: 60px; }
+  &:before { left: 0; top: 0; border-width: 2px 0 0 2px; }
+  &:after { right: 0; bottom: 0; border-width: 0 2px 2px 0; }
 }

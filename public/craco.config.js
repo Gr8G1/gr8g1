@@ -4,7 +4,7 @@ const CracoAlias = require('craco-alias');
 module.exports = {
   devServer: {
     compress: true,
-    port: 8081,
+    port: 8080,
     open: false,
     historyApiFallback: true
   },
@@ -24,7 +24,7 @@ module.exports = {
     configure: (webpackConfig, { env, paths }) => {
       if (env === 'development') {
         // const overrideOptions = {
-        //   // ... options
+        //  ...options
         // };
         // const { isFound, match } = getLoader(webpackConfig, loaderByName('style-loader'));
 

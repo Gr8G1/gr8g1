@@ -1,0 +1,6 @@
+.motionBox.portfolio {
+  .scrollBox { background: url('/assets/images/bg.png') no-repeat center / calc(100% - 24px) 100%; background-attachment: fixed;
+    & > div { perspective: 1px; transform-style: preserve-3d; }
+    & > div > div { transform-style: inherit; }
+  }
+}

@@ -1,3 +1,7 @@
 @import 'reset.css';
 
-/* Common */
+#root { width: 100%; height: 100%; }
+#wrap, #contents { width: inherit; height: inherit; }
+#contents { padding: 0 12px; }
+
+button { padding: 0; margin: 0; border: 0; background: transparent; -webkit-appearance: none; appearance: none; cursor: pointer; }

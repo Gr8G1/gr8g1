@@ -1,0 +1,16 @@
+@import '@/assets/scss/_mixins';
+
+.career { position: relative; transform: translate(.125px) scale(.875); transform-origin: 50% 100%;
+  @include boxShape();
+
+  .careerList { position: relative; z-index: 2; padding: 24px 12px 84px;
+    li { margin: 32px 0 8px;
+      &:first-child { margin: 0 0 8px; }
+      .info { position: relative; padding: 0 0 8px; margin: 0 0 8px; border-bottom: 2px solid var(--text-color);
+        .company { font-size: 26px; }
+        .team { display: inline-block; position: absolute; right: 0; bottom: 8px; font-size: 14px; }
+      }
+      .date { display: block; font-size: 12px; text-align: right; }
+    }
+  }
+}

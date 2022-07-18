@@ -10,8 +10,9 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/jsx-runtime'
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
-    parser: 'babel-eslint',
+    ecmaVersion: 'latest',
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true

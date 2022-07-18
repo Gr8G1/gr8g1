@@ -1,0 +1,40 @@
+{
+  "career": [
+    {
+      "company": "스트라토",
+      "team": "Cloud 2",
+      "position": "FE-Developer",
+      "date": ["2021-05", "2022-07"]
+    },
+    {
+      "company": "미디어포스&컴퍼니",
+      "team": "Front-end",
+      "position": "FE-Developer",
+      "date": ["2020.10", "2021.05"]
+    },
+    {
+      "company": "SK커뮤니케이션즈",
+      "team": "Front-end",
+      "position": "FE-Developer",
+      "date": ["2020.06", "2021.09"]
+    },
+    {
+      "company": "CAFE24",
+      "team": "UI/UX",
+      "position": "FE-Developer",
+      "date": ["2018-10", "2019-11"]
+    },
+    {
+      "company": "프레즌트",
+      "team": "UI/UX",
+      "position": "Publisher",
+      "date": ["2016-07", "2018-05"]
+    },
+    {
+      "company": "WISA",
+      "team": "UI/UX",
+      "position": "Publisher",
+      "date": ["2015-04", "2016-05"]
+    }
+  ]
+}

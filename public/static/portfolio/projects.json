@@ -1,0 +1,39 @@
+{
+  "projects": [
+    {
+      "company": "KB국민은행",
+      "url": "https://data.kbland.kr/",
+      "name": "리브부동산 데이터허브",
+      "description": "부동산 데이터 플랫폼",
+      "language": ["Vue", "Vuex", "D3", "CompositionAPI", "NaverMap"]
+    },
+    {
+      "url": "https://agent.kbland.kr/",
+      "company": "KB국민은행",
+      "name": "리브부동산 중개사허브",
+      "description": "부동산 공인중개사 전용 플랫폼",
+      "language": ["Vue", "Vuex", "NaverMap"]
+    },
+    {
+      "url": "https://kbland.kr/",
+      "company": "KB국민은행",
+      "name": "리브부동산",
+      "description": "부동산 컨텐츠 플랫폼",
+      "language": ["Vue", "Vuex", "NaverMap"]
+    },
+    {
+      "url": "https://news.nate.com/",
+      "company": "SK커뮤니케이션즈",
+      "name": "네이트 오늘",
+      "description": "실시간 랭킹 뉴스 서비스",
+      "language": ["D3", "Gasp", "Gulp"]
+    },
+    {
+      "url": "https://store.cafe24.com/",
+      "company": "Cafe24",
+      "name": "Cafe24 스토어",
+      "description": "Cafe24 쇼핑몰 솔루션 앱스토어 플랫폼",
+      "language": ["Pug", "Scss", "Gulp"]
+    }
+  ]
+}

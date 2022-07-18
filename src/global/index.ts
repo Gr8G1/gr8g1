@@ -1,3 +1,8 @@
+// * lib
 import _ from 'lodash';
 
-window._ = _;
+// * globally
+import request from '@/core/request';
+
+window['_'] = _;
+window['_request'] = request;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Portal from '@/components/common/portal/Portal';
 
-import './Modal.scoped.scss';
+import './Modal.scss';
 
 interface Props extends ReactProps {
   status: boolean;

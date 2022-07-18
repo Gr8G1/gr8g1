@@ -1,12 +1,12 @@
 import { RouteObject } from 'react-router-dom';
-import { MAIN_PATH } from '../route.paths';
+import { ROUTE_PATH } from '../route.paths';
 
 import Default from '@/components/layouts/Default';
 import MainPage from '@/pages/main/MainPage';
 
 const mainRoute: RouteObject[] = [
   {
-    path: MAIN_PATH,
+    path: ROUTE_PATH.MAIN,
     element: <Default />,
     children: [
       {

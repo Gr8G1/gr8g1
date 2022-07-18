@@ -1,9 +1,9 @@
-function Main() {
+import './Main.scss';
+
+function MainPage() {
   return (
-    <>
-      Hi, There 😀
-    </>
+    <></>
   );
 }
 
-export default Main;
+export default MainPage;
