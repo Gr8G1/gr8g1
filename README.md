@@ -1,3 +1,4 @@
+
 ### :grinning:
 ### Interest
   * React, Next, Vue, Nuxt, Svelte
@@ -8,3 +9,5 @@
 
 ### N/D;
   * License: [Choosea license](https://choosealicense.com/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6b118fc8-cc62-4648-b978-f149b36949d1/deploy-status)](https://app.netlify.com/sites/keen-douhua-6bb9fe/deploys)
