@@ -1,0 +1,20 @@
+.logs {
+  .tags { display: flex; flex-wrap: wrap; justify-content: flex-end; margin: 12px 0 0;
+    .tag { margin: 4px; padding: 6px 12px; border: 1px solid var(--white); border-radius: 12px;
+      &.active { background: var(--white); color: var(--black); }
+    }
+  }
+
+  ul { overflow: hidden;
+    li { position: relative; margin: 24px 0;
+      .info { position: relative; cursor: pointer;
+        .title { display: block; padding: 0 0 12px; margin: 0 0 12px; border-bottom: 2px solid var(--text-color); font-size: 22px; line-height: 28px; }
+        .tag,
+        .date { display: inline-block; position: absolute; right: 0; }
+        .tag { top: 4px; font-size: 14px; }
+        .date { bottom: 8px; font-size: 12px; }
+      }
+      .content { overflow: hidden; width: 100%; margin: 12px 0 0; }
+    }
+  }
+}

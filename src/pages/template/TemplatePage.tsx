@@ -5,16 +5,14 @@ import Wrapper from '@/components/template/Wrapper';
 import Syntax from '@/components/template/Syntax';
 import Modal from '@/components/common/modal/Modal';
 
+import './TemplatePage.scss';
+
 function TemplatePage() {
   const isModalVisible = useSelector(_modalStatus);
   const dispatch = useDispatch();
 
   return (
     <div className="template">
-      <h2>Template</h2>
-
-      <hr />
-
       <Wrapper title="Modal">
         <div>
           <button type="button" onClick={() => dispatch(_setModalStatus(!isModalVisible))}>Modal Toggle</button>
@@ -29,7 +27,7 @@ function TemplatePage() {
       </Wrapper>
 
       <Wrapper title="code-highlight">
-        <Syntax codes='(num) => num + 1'/>
+        <Syntax code='(num) => num + 1'/>
       </Wrapper>
     </div>
   );

@@ -1,11 +1,13 @@
 import Motion from '@/components/common/motion/Motion';
-import './Logs.scss';
+import Logs from '@/components/logs/Logs';
+
+import './LogsPage.scss';
 
 function LogsPage() {
   return (
     <Motion title="Logs">
       <div className='inner'>
-        Logs
+        <Logs />
       </div>
     </Motion>
   );

@@ -18,6 +18,7 @@ module.exports = {
       jsx: true
     }
   },
+  plugins: ['@typescript-eslint'],
   rules: {
     /**
     * * Lint Docs
@@ -51,17 +52,18 @@ module.exports = {
     'block-spacing': ['error', 'always'],
     'semi': ['error', 'always'],
     'quotes': ['error', 'single'],
-    'indent': ['error', 2, {
-      'SwitchCase': 1,
-      'ObjectExpression': 1,
-      'MemberExpression': 1,
-      'ImportDeclaration': 1,
-      'VariableDeclarator': 1,
-      // 'ignoredNodes': [
-      //   'CallExpression > FunctionExpression.callee > BlockStatement.body'
-      // ],
-      'ignoreComments': true
-    }],
+    // ESLint
+    // 'indent': ['error', 2, {
+    //   'SwitchCase': 1,
+    //   'ObjectExpression': 1,
+    //   'MemberExpression': 1,
+    //   'ImportDeclaration': 1,
+    //   'VariableDeclarator': 1,
+    //   // 'ignoredNodes': [
+    //   //   'CallExpression > FunctionExpression.callee > BlockStatement.body'
+    //   // ],
+    //   'ignoreComments': true
+    // }],
     'comma-style': ['error', 'last'],
     'comma-dangle': ['error', 'never'],
     'comma-spacing': ['error', {
@@ -121,6 +123,9 @@ module.exports = {
       'when': 'never',
       'allowMultiline': false
     }],
+
+    'indent': 'off',
+    '@typescript-eslint/indent': ['error', 2],
 
     // # Build
     'no-console': 'off',

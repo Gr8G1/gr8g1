@@ -1,6 +1,6 @@
-import { Scrollbars } from 'react-custom-scrollbars';
 import { motion } from 'framer-motion';
 
+import CustomScroll from '@/components/common/custom-scroll/CustomScroll';
 import PageTitle from '@/components/common/title/PageTitle';
 import './Motion.scss';
 
@@ -21,15 +21,9 @@ function Motion({ title, children }: Props) {
       }}
     >
       <PageTitle title={`<${title} />`} />
-      <Scrollbars
-        className='scrollBox'
-        style={{ height: 'calc(100% - 118px)' }}
-        renderThumbVertical={({ style, ...props }) => (
-          <div {...props} style={{ ...style, width: '4', borderRadius: '3px', backgroundColor: 'rgba(255, 255, 255, .4)' }} />
-        )}
-      >
+      <CustomScroll height="calc(100% - 118px)">
         {children}
-      </Scrollbars>
+      </CustomScroll>
     </motion.div>
   );
 }

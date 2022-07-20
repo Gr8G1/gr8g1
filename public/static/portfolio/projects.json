@@ -3,14 +3,14 @@
     {
       "company": "KB국민은행",
       "url": "https://data.kbland.kr/",
-      "name": "리브부동산 데이터허브",
+      "name": "리브부동산\n데이터허브",
       "description": "부동산 데이터 플랫폼",
       "language": ["Vue", "Vuex", "D3", "CompositionAPI", "NaverMap"]
     },
     {
       "url": "https://agent.kbland.kr/",
       "company": "KB국민은행",
-      "name": "리브부동산 중개사허브",
+      "name": "리브부동산\n중개사허브",
       "description": "부동산 공인중개사 전용 플랫폼",
       "language": ["Vue", "Vuex", "NaverMap"]
     },

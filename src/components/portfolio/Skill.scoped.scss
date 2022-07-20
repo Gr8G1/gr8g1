@@ -1,14 +1,13 @@
 @import '@/assets/scss/_mixins';
 
-.skill { position: relative; transform: translate(.125px) scale(.875); transform-origin: 50% 100%;
+.skill { position: relative; margin: 0 16px 0 0; padding: 0 16px; transform: translate(.125px) scale(.875); transform-origin: 50% 100%;
   @include boxShape();
 
   .skillList { padding: 24px 12px 84px;
     li { margin: 32px 0 8px; font-size: 22px;
       &:first-child { margin: 0 0 8px; }
       .title {
-        span {
-          display: block; position: relative; height: 2px; margin: 2px 0 0; background: var(--text-color);
+        span { display: block; position: relative; height: 2px; margin: 8px 0 0; background: var(--text-color);
           i { position: absolute; right: 0; bottom: 6px; font-size: 12px; }
         }
       }

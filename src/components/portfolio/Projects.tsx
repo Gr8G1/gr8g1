@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import { AiOutlineRight } from 'react-icons/ai';
 
 import SubTitle from '@/components/common/title/SubTitle';
@@ -20,7 +19,6 @@ const openWindow = (path: string, target: string, features?: string): void => {
 };
 
 function Projects() {
-  const navigate = useNavigate();
   const [projectList, setProjectList] = useState<Array<{ [key: string]: any }>>([]);
 
   useEffect(() => {
@@ -44,7 +42,7 @@ function Projects() {
             return (
               <li key={p.name}>
                 <p className='info'>
-                  <strong className='name'>{p.name}</strong>
+                  <strong className='name'>{`${p.name}`}</strong>
                   <button type='button' className='goProject' onClick={() => openWindow(p.url, '_blank')}>
                     <span>View</span>
                     <AiOutlineRight />

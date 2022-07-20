@@ -6,7 +6,7 @@ import Activity from '@/components/portfolio/Activity';
 import Skill from '@/components/portfolio/Skill';
 import Projects from '@/components/portfolio/Projects';
 
-import './Portfolio.scss';
+import './PortfolioPage.scss';
 
 function PortfolioPage() {
   return (

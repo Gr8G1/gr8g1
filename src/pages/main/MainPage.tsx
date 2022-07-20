@@ -1,4 +1,4 @@
-import './Main.scss';
+import './MainPage.scss';
 
 function MainPage() {
   return (
