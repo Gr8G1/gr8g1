@@ -14,12 +14,12 @@ function CustomScroll({ height, children }: Props) {
       renderThumbVertical={({ style, ...props }) => (
         <div {...props} style={{ ...style, borderRadius: 4, backgroundColor: 'rgba(255, 255, 255, .4)' }} />
       )}
-      renderTrackHorizontal={(style, ...props) => (
-        <div {...props} style={{ ...style, position: 'absolute', right: 4, left: 4, bottom: 4, height: 4, borderRadius: 4 }} />
-      )}
-      renderThumbHorizontal={({ style, ...props }) => (
-        <div {...props} style={{ ...style, borderRadius: 4, backgroundColor: 'rgba(255, 255, 255, .4)' }} />
-      )}
+      // renderTrackHorizontal={(style, ...props) => (
+      //   <div {...props} style={{ ...style, position: 'absolute', right: 4, left: 4, bottom: 4, height: 4, borderRadius: 4 }} />
+      // )}
+      // renderThumbHorizontal={({ style, ...props }) => (
+      //   <div {...props} style={{ ...style, borderRadius: 4, backgroundColor: 'rgba(255, 255, 255, .4)' }} />
+      // )}
     >
       {children}
     </Scrollbars>
