@@ -10,7 +10,7 @@ import './PortfolioPage.scss';
 
 function PortfolioPage() {
   return (
-    <Motion title="Portfolio">
+    <Motion title='Portfolio'>
       <About />
       <Career />
       <Activity />

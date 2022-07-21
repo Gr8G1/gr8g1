@@ -1,26 +1,40 @@
+import { useState, createRef } from 'react';
 import { Scrollbars } from 'react-custom-scrollbars';
+import { AiFillUpCircle } from 'react-icons/ai';
 
+import './CustomScroll.scss';
 interface Props extends ReactProps {
   height: string;
 }
 
 function CustomScroll({ height, children }: Props) {
+  const scrollbars = createRef<Scrollbars>();
+  const [scrollTop, setScrollTop] = useState<number>(0);
+  const onUpdateScroll = ({ top }: { top: number }) => setScrollTop(top);
+  const onScrollTop = () => scrollbars.current.scrollTop(0);
+  const onRenderThumbVertical = ({ style, ...props }) => {
+    const thumbStyles = {
+      width: 4,
+      borderRadius: 4,
+      backgroundColor: 'rgba(255, 255, 255, .4)'
+    };
+
+    return (
+      <div style={{ ...style, ...thumbStyles }} {...props} />
+    );
+  };
+
   return (
-    <Scrollbars className='customScroll'
+    <Scrollbars
+      ref={scrollbars}
+      className='customScroll'
       style={{ height }}
-      renderTrackVertical={(style, ...props) => (
-        <div {...props} style={{ ...style, position: 'absolute', right: 4, top: 4, bottom: 4, width: 4, borderRadius: 4 }} />
-      )}
-      renderThumbVertical={({ style, ...props }) => (
-        <div {...props} style={{ ...style, borderRadius: 4, backgroundColor: 'rgba(255, 255, 255, .4)' }} />
-      )}
-      // renderTrackHorizontal={(style, ...props) => (
-      //   <div {...props} style={{ ...style, position: 'absolute', right: 4, left: 4, bottom: 4, height: 4, borderRadius: 4 }} />
-      // )}
-      // renderThumbHorizontal={({ style, ...props }) => (
-      //   <div {...props} style={{ ...style, borderRadius: 4, backgroundColor: 'rgba(255, 255, 255, .4)' }} />
-      // )}
+      onUpdate={onUpdateScroll}
+      renderThumbVertical={onRenderThumbVertical}
     >
+      {/* <button type='button' className='goTop' onClick={onScrollTop}>
+        <AiFillUpCircle />
+      </button> */}
       {children}
     </Scrollbars>
   );
