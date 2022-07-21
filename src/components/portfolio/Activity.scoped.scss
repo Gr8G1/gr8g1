@@ -1,6 +1,6 @@
 @import '@/assets/scss/_mixins';
 
-.activity { position: relative; margin: 0 16px 0 0; padding: 0 16px; transform: translate(.125px) scale(.875); transform-origin: 50% 100%;
+.activity { position: relative; margin: 0 16px 0 0; padding: 0 16px; transform: translateZ(.125px) scale(.875);
   @include boxShape();
 
   .activityList { padding: 24px 12px 84px;

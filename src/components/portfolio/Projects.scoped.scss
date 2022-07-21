@@ -1,6 +1,6 @@
 @import '@/assets/scss/_mixins';
 
-.projects { position: relative; margin: 0 16px 0 0; padding: 0 16px; transform: translate(.125px) scale(.875); transform-origin: 50% 100%;
+.projects { position: relative; margin: 0 16px 0 0; padding: 0 16px; transform: translateZ(.125px) scale(.875);
   @include boxShape();
 
   .projectList { padding: 24px 12px 60px;

@@ -1,5 +1,7 @@
 .motionBox.portfolio {
   & > .customScroll { background: url('/assets/images/bg.png') no-repeat center / calc(100% - 24px) 100%; background-attachment: fixed;
-    & > div { /* Scroll Container */ }
+    & > div { /* Scroll Container */
+      .inner { }
+    }
   }
 }

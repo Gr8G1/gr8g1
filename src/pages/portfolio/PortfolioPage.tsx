@@ -11,11 +11,13 @@ import './PortfolioPage.scss';
 function PortfolioPage() {
   return (
     <Motion title='Portfolio'>
-      <About />
-      <Career />
-      <Activity />
-      <Skill />
-      <Projects />
+      <div className='inner'>
+        <About />
+        <Career />
+        <Activity />
+        <Skill />
+        <Projects />
+      </div>
     </Motion>
   );
 }
