@@ -1,0 +1,9 @@
+.markdown-body { padding: 12px; border-radius: 12px;
+  pre > div { margin: -16px !important; }
+  ul { list-style: initial; }
+  ol { list-style: auto; }
+  .image { text-align:center;
+    img { width: 65%; height: auto; }
+    span { text-align: inherit; color: #d9d9d9; }
+  }
+}

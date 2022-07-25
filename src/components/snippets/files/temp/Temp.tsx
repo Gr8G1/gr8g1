@@ -1,7 +1,15 @@
-import Gen from '@/components/common/syntax/Gen';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
-const code = `***  ***
+interface Props extends ReactProps {
+  code: string;
+  language?: 'javascript' | string
+}
 
-`;
-
-export default () => (<Gen code={code} />);
+export default ({ code, language = 'javascript' }: Props) => {
+  return (
+    <SyntaxHighlighter style={oneDark} language={language}>
+      {code}
+    </SyntaxHighlighter>
+  );
+};

@@ -1,4 +1,4 @@
-import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter/';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { oneDark } from 'react-syntax-highlighter/dist/esm/styles/prism';
 
 import './Syntax.scss';
@@ -12,7 +12,7 @@ export default ({ code, language = 'javascript' }: Props) => {
   return (
     // showLineNumbers
     // wrapLines
-    <SyntaxHighlighter language={language} style={oneDark}>
+    <SyntaxHighlighter style={oneDark} language={language}>
       {code}
     </SyntaxHighlighter>
   );

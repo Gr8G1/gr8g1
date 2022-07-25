@@ -1,4 +1,4 @@
-import Gen from '@/components/common/syntax/Gen';
+import Temp from './temp/Temp';
 
 const code = `*** EnvFrame ***
 
@@ -53,4 +53,4 @@ export default {
 </script>
 `;
 
-export default () => (<Gen code={code} />);
+export default () => <Temp code={code} />;
