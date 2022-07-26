@@ -1,4 +1,7 @@
 // DataStructure
+import BinarySearchTree from '../files/BinarySearchTree';
+import Queue from '../files/Queue';
+import Stack from '../files/Stack';
 import DoublyLinkedList from '../files/DoublyLinkedList';
 import SinglyLinkedList from '../files/SinglyLinkedList';
 
@@ -14,6 +17,27 @@ import BubbleSort from '../files/BubbleSort';
 import BigO from '../files/BigO';
 
 const items = {
+  BinarySearchTree: {
+    component: BinarySearchTree,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.26',
+    isActiveContent: false
+  },
+  Queue: {
+    component: Queue,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.24',
+    isActiveContent: false
+  },
+  Stack: {
+    component: Stack,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.24',
+    isActiveContent: false
+  },
   DoublyLinkedList: {
     component: DoublyLinkedList,
     tags: ['Javascript', 'DataStructure'],

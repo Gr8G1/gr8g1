@@ -2,8 +2,7 @@ import Temp from './temp/Temp';
 
 const markdown = `
 ### 기수 정렬
-앞서 정리한 정렬 알고리즘들(Bubble, Insertion, Selction, Quick, Merge...)은 비교 기반으로 동작하는데
-기수 정렬의 경우 기수(정수, 낱말등 유한한 범위의 값 또는 열거/나열 가능한 값)에 따라 요소를 [버킷(bucket)](https://ko.wikipedia.org/wiki/%EB%B2%84%ED%82%B7_%EC%A0%95%EB%A0%AC)에 집어 넣기 때문에 비교가 불필요하다.
+앞서 정리한 정렬 알고리즘들(Bubble, Insertion, Selction, Quick, Merge...)은 비교 기반으로 동작하는데 반해 기수 정렬의 경우 기수(정수, 낱말등 유한한 범위의 값 또는 열거/나열 가능한 값)에 따라 요소를 [버킷(bucket)](https://ko.wikipedia.org/wiki/%EB%B2%84%ED%82%B7_%EC%A0%95%EB%A0%AC)에 집어 넣기 때문에 비교가 불필요하다.   
 단점으로는 공간 복잡도(O(n + k))와 정렬 방식의 특수성 때문에 적용가능한 범위가 한정적인 것이다.
 
 ### 코드
