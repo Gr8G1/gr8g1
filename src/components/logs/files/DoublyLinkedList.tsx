@@ -148,10 +148,9 @@ class DoublyLinkedList {
 ~~~
 
 ### 복잡도
-|    | Insertion | removal | Searching | Access |
-| --:| ---------:| -------:| ---------:| ------:|
+|  #  | Insert | Delete | Search | Access |
+| ---:| ------:| ------:| ------:| ------:|
 | TC | O(1) | O(1) / O(n) | O(n/2) / O(n) | O(n) |
-| SC | | | | |
 
 ### 시각화 자료
 [Visualgo - list](https://visualgo.net/en/list)

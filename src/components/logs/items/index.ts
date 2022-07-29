@@ -1,5 +1,9 @@
 // DataStructure
-import BinarySearchTree from '../files/BinarySearchTree';
+import HashTable from '../files/HashTable';
+import PriorityQueue from '../files/PriorityQueue';
+import Heap from '../files/Heap';
+import TreeTraversals from '../files/TreeTraversals';
+import Tree from '../files/Tree';
 import Queue from '../files/Queue';
 import Stack from '../files/Stack';
 import DoublyLinkedList from '../files/DoublyLinkedList';
@@ -17,8 +21,36 @@ import BubbleSort from '../files/BubbleSort';
 import BigO from '../files/BigO';
 
 const items = {
-  BinarySearchTree: {
-    component: BinarySearchTree,
+  HashTable: {
+    component: HashTable,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.28',
+    isActiveContent: false
+  },
+  PriorityQueue: {
+    component: PriorityQueue,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.27',
+    isActiveContent: false
+  },
+  Heap: {
+    component: Heap,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.27',
+    isActiveContent: false
+  },
+  TreeTraversals: {
+    component: TreeTraversals,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.26',
+    isActiveContent: false
+  },
+  Tree: {
+    component: Tree,
     tags: ['Javascript', 'DataStructure'],
     description: '',
     date: '2022.07.26',
