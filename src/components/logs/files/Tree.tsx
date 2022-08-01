@@ -6,8 +6,9 @@ const markdown = `
 트리 구조 최상위 노드는 루트 노드(root node - 부모가 없는 노드), 노드 A => B를 가리킬 때 A를 B의 부모 노드(parent node) B는 A의 자식 노드(child node)라고 한다.   
 자식 노드가 없는 경우 잎 노드(leaf node) 또는 말단 노드 (terminal node)라고 하고 잎 노드가 아닌 노드를 내부 노드(internal node)라고 한다.   
 노드에는 항상 하나의 부모만 있지만 여러 자식을 가질 수 있고 순환(A => B => root)을 형성을 하지 않는다.
+> 트리는 두 정점 이 정확히 하나 의 경로 로 연결된 무 방향 그래프 이거나, 동등하게 연결된 비순환 무방향 그래프입니다.
 
-### 일상 생활속 트리의 사용처
+일상 생활속 트리의 사용처
 1. AI(Artificial Intelligence)
 2. HTML DOM
 3. 네트워크 라우팅

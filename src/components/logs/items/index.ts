@@ -1,4 +1,7 @@
 // DataStructure
+import Dijkstra from '../files/Dijkstra';
+import GraphTraversals from '../files/GraphTraversals';
+import Graph from '../files/Graph';
 import HashTable from '../files/HashTable';
 import PriorityQueue from '../files/PriorityQueue';
 import Heap from '../files/Heap';
@@ -21,6 +24,27 @@ import BubbleSort from '../files/BubbleSort';
 import BigO from '../files/BigO';
 
 const items = {
+  Dijkstra: {
+    component: Dijkstra,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.08.01',
+    isActiveContent: false
+  },
+  GraphTraversals: {
+    component: GraphTraversals,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.29',
+    isActiveContent: false
+  },
+  Graph: {
+    component: Graph,
+    tags: ['Javascript', 'DataStructure'],
+    description: '',
+    date: '2022.07.28',
+    isActiveContent: false
+  },
   HashTable: {
     component: HashTable,
     tags: ['Javascript', 'DataStructure'],
