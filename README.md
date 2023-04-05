@@ -2,9 +2,9 @@
 
 ### :grinning:
 ### Interest
-  * React, Next, Vue, Nuxt, Svelte
-  * Typescript
-  * JS DesignPattern & Algorithm
+  * React, Next, Vue, Nuxt, Svelte, Typescript
+  * Java, Spring, Spring Security, AWS, Docker, Jenkins
+  * DesignPattern & Algorithm
   * Data visualization
   * TDD(Test Driven Development)
 
