@@ -1,67 +1,42 @@
+import { useState, useEffect } from 'react';
 import SubTitle from '@/components/common/title/SubTitle';
 
+import { _getSkill } from '@/api/portfolio';
 import './Skill.scoped.scss';
 
 function Skill() {
-  const skillList: { name: string, exp: number }[] = [
-    {
-      name: 'HTML',
-      exp: 85
-    },
-    {
-      name: 'CSS',
-      exp: 80
-    },
-    {
-      name: 'Javascript',
-      exp: 85
-    },
-    {
-      name: 'React',
-      exp: 70
-    },
-    {
-      name: 'Next',
-      exp: 30
-    },
-    {
-      name: 'Vue',
-      exp: 75
-    },
-    {
-      name: 'Nuxt',
-      exp: 35
-    },
-    {
-      name: 'Typescript',
-      exp: 60
-    },
-    {
-      name: 'Nodejs',
-      exp: 45
-    },
-    {
-      name: 'Pug',
-      exp: 65
-    },
-    {
-      name: 'Gulp',
-      exp: 65
-    }
-  ];
+  const [skillList, setSkillList] = useState<Array<{ [key: string]: any }>>([]);
+
+  useEffect(() => {
+    (async () => {
+      try {
+        const { skill } = await _getSkill();
+
+        await setSkillList(skill);
+      } catch (err) {
+        console.log(err);
+      }
+    })();
+  }, []);
 
   return (
     <div className='skill'>
       <SubTitle title="Skill" pointColor='red' />
       <ul className='skillList'>
         {
-          skillList.map(s => {
+          skillList.map((s, i) => {
             return (
-              <li key={s.name}>
+              <li key={Object.keys(s)[0]}>
                 <p className='title'>
-                  <strong>{s.name}</strong>
-                  <span style={{ width: `${s.exp}%` }}><i>{s.exp}%</i></span>
+                  <strong>{Object.keys(s)[0]} <i></i></strong>
                 </p>
+                {
+                  s[Object.keys(s)[0]].map((v, i) => {
+                    return (
+                      <span key={v.name}>{v.name}{i < s[Object.keys(s)[0]].length - 1 ? ', ' : ''}</span>
+                    );
+                  })
+                }
               </li>
             );
           })

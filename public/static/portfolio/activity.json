@@ -1,29 +1,19 @@
 {
   "activity": [
     {
-      "name": "Data Structure & Algorithm",
-      "provider": "Udemy",
-      "date": ["2021-06", "2022-07"]
-    },
-    {
-      "name": "Understanding TypeScript",
-      "provider": "Udemy",
-      "date": ["2021-05", "2022-06"]
-    },
-    {
-      "name": "React The Complete Guide",
-      "provider": "Udemy",
-      "date": ["2020-07", "2020-08"]
-    },
-    {
-      "name": "Vue The Complete Guide",
-      "provider": "Udemy",
-      "date": ["2019-12", "2020-01"]
+      "name": "Back-end 개발자 42기",
+      "provider": "코드스테이츠",
+      "date": ["2022-10", "2018-04"]
     },
     {
       "name": "Front-end 개발자 1기",
-      "provider": "VanillaCoding",
-      "date": ["2019-12", "2020-01"]
+      "provider": "바닐라 코딩",
+      "date": ["2017-08", "2018-04"]
+    },
+    {
+      "name": "웹 퍼블리셔 (UI/UX)",
+      "provider": "그린컴퓨터 아트학원",
+      "date": ["2014-10", "2015-04"]
     }
   ]
 }
