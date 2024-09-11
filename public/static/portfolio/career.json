@@ -1,6 +1,12 @@
 {
   "career": [
     {
+      "company": "위펀",
+      "team": "개발팀",
+      "position": "FE-Developer / Unit장",
+      "date": ["2023-07", "2024-06"]
+    },
+    {
       "company": "스트라토",
       "team": "Cloud 2",
       "position": "FE-Developer",
@@ -27,7 +33,7 @@
     {
       "company": "프레즌트",
       "team": "UI/UX",
-      "position": "Publisher",
+      "position": "Publisher / FE-Developer",
       "date": ["2016-07", "2018-05"]
     },
     {

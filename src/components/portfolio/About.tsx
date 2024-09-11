@@ -4,7 +4,7 @@ function About() {
   return (
     <div className='about'>
       <div className='info'>
-        <strong className='title'>Front-end-Developer</strong>
+        <strong className='title'>Front-end Developer</strong>
         <span className='subTitle'>HyunJiwon</span>
       </div>
     </div>

@@ -1,6 +1,13 @@
 {
   "projects": [
     {
+      "company": "위펀",
+      "url": "https://apps.apple.com/kr/app/%EC%9C%84%ED%8E%80/id6479632616",
+      "name": "위펀",
+      "description": "B2B 기업 복지 서비스",
+      "language": ["React Native", "Expo", "Github Action"]
+    },
+    {
       "company": "KB국민은행",
       "url": "https://data.kbland.kr/",
       "name": "리브부동산\n데이터허브",
