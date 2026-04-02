@@ -1,25 +1,47 @@
+/**
+ * 포트폴리오 메인 페이지
+ * - 섹션별 데이터 fetch 후 각 섹션에 전달
+ */
+import { useEffect, useState } from 'react';
+import { _getCareer, _getProjects } from '@/api/portfolio';
 
-import Motion from '@/components/common/motion/Motion';
-import About from '@/components/portfolio/About';
-import Career from '@/components/portfolio/Career';
-import Activity from '@/components/portfolio/Activity';
-import Skill from '@/components/portfolio/Skill';
-import Projects from '@/components/portfolio/Projects';
+// TODO: FlowLine 추후 복원 예정
+// import FlowLine from '@/components/ui/FlowLine';
+import HeroSection from '@/components/sections/HeroSection';
+import CareerSection from '@/components/sections/CareerSection';
+import ProjectsSection from '@/components/sections/ProjectsSection';
+import ContactSection from '@/components/sections/ContactSection';
 
-import './PortfolioPage.scss';
+type TCareerItem = {
+  company: string;
+  team: string;
+  position: string;
+  date: [string, string];
+};
 
-function PortfolioPage() {
+type TProjectItem = {
+  company: string;
+  url: string;
+  name: string;
+  description: string;
+  language: string[];
+};
+
+export default function PortfolioPage() {
+  const [careers, setCareers] = useState<TCareerItem[]>([]);
+  const [projects, setProjects] = useState<TProjectItem[]>([]);
+
+  useEffect(() => {
+    _getCareer().then((res: any) => setCareers(res?.career ?? []));
+    _getProjects().then((res: any) => setProjects(res?.projects ?? []));
+  }, []);
+
   return (
-    <Motion title='Portfolio'>
-      <div className='inner'>
-        <About />
-        <Career />
-        <Activity />
-        <Skill />
-        <Projects />
-      </div>
-    </Motion>
+    <>
+      <HeroSection />
+      <CareerSection data={careers} />
+      <ProjectsSection data={projects} />
+      <ContactSection />
+    </>
   );
 }
-
-export default PortfolioPage;

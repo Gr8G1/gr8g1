@@ -1,4 +1,4 @@
-@import '@/assets/scss/_mixins';
+@use '@/assets/scss/mixins' as *;
 
 .skill { position: relative; margin: 0 16px 0 0; padding: 0 16px; transform: translateZ(.125px) scale(.875);
   @include boxShape();

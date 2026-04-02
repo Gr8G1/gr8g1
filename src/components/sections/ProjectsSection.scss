@@ -1,0 +1,285 @@
+.projects-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 120px 48px 80px;
+  background: #0a0a0a;
+  overflow: hidden;
+
+  @media (max-width: 768px) {
+    padding: 100px 20px 60px;
+  }
+}
+
+.morph-blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 500px;
+  height: 500px;
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+  will-change: transform, opacity;
+
+  &.visible {
+    opacity: 1;
+  }
+
+  .blob-inner {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 45% 45%,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(220, 225, 255, 0.06) 35%,
+      rgba(180, 190, 240, 0.03) 60%,
+      transparent 80%
+    );
+    border-radius: 42% 58% 62% 38% / 54% 40% 60% 46%;
+    filter: blur(8px);
+    animation: morph-shape 6s ease-in-out infinite, morph-drift 10s ease-in-out infinite;
+  }
+
+  .blob-ring {
+    position: absolute;
+    inset: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 58% 42% 48% 52% / 38% 62% 44% 56%;
+    animation: morph-shape-alt 8s ease-in-out infinite, morph-drift-alt 12s ease-in-out infinite;
+  }
+
+  @media (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@keyframes morph-shape {
+  0%   { border-radius: 42% 58% 62% 38% / 54% 40% 60% 46%; }
+  25%  { border-radius: 58% 42% 48% 52% / 38% 62% 44% 56%; }
+  50%  { border-radius: 36% 64% 52% 48% / 62% 34% 56% 44%; }
+  75%  { border-radius: 64% 36% 42% 58% / 44% 56% 38% 62%; }
+  100% { border-radius: 42% 58% 62% 38% / 54% 40% 60% 46%; }
+}
+
+@keyframes morph-shape-alt {
+  0%   { border-radius: 58% 42% 48% 52% / 44% 56% 38% 62%; }
+  33%  { border-radius: 42% 58% 62% 38% / 62% 34% 56% 44%; }
+  66%  { border-radius: 64% 36% 42% 58% / 38% 62% 44% 56%; }
+  100% { border-radius: 58% 42% 48% 52% / 44% 56% 38% 62%; }
+}
+
+@keyframes morph-drift {
+  0%   { transform: translate(0, 0) scale(1); }
+  25%  { transform: translate(20px, -15px) scale(1.04); }
+  50%  { transform: translate(-10px, 10px) scale(0.97); }
+  75%  { transform: translate(15px, 20px) scale(1.02); }
+  100% { transform: translate(0, 0) scale(1); }
+}
+
+@keyframes morph-drift-alt {
+  0%   { transform: translate(0, 0) rotate(0deg); }
+  33%  { transform: translate(-15px, 12px) rotate(5deg); }
+  66%  { transform: translate(10px, -8px) rotate(-3deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+.projects-inner {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.projects-section .section-header {
+  margin-bottom: 32px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 28px;
+  }
+}
+
+.projects-section .section-tag {
+  display: inline-block;
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7), rgba(142, 200, 237, 0.6));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(142, 200, 237, 0.15);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: auto 0;
+
+  @media (max-width: 900px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+}
+
+.project-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+  padding: 28px 24px;
+  background: transparent;
+  cursor: pointer;
+  transition: border-color 0.3s ease, background 0.3s ease;
+
+  &:nth-child(even) {
+    margin-top: 32px;
+
+    @media (max-width: 900px) {
+      margin-top: 16px;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: 0;
+    }
+  }
+
+  &:hover {
+    border-color: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.02);
+
+    .arrow-icon {
+      transform: translate(3px, -3px);
+      color: var(--white);
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding: 20px 18px;
+    gap: 8px;
+  }
+
+  @media (max-width: 600px) {
+    padding: 16px;
+    gap: 6px;
+  }
+
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .card-index {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.9);
+    letter-spacing: -0.02em;
+    line-height: 1;
+
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 18px;
+    }
+  }
+
+  .arrow-icon {
+    width: 18px;
+    height: 18px;
+    color: rgba(255, 255, 255, 0.25);
+    transition: transform 0.25s, color 0.25s;
+    flex-shrink: 0;
+
+    @media (max-width: 600px) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  .name {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--white);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+      font-size: 15px;
+    }
+
+    @media (max-width: 600px) {
+      font-size: 14px;
+    }
+  }
+
+  .company {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.35);
+    letter-spacing: 0.04em;
+
+    @media (max-width: 600px) {
+      font-size: 10px;
+    }
+  }
+
+  .description {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: rgba(255, 255, 255, 0.4);
+    line-height: 1.6;
+
+    @media (max-width: 600px) {
+      font-size: 11px;
+      line-height: 1.5;
+    }
+  }
+
+  .tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0;
+    margin: 0;
+    margin-top: auto;
+    padding-top: 8px;
+
+    @media (max-width: 600px) {
+      gap: 4px;
+      padding-top: 6px;
+    }
+  }
+
+  .tag {
+    font-size: 9px;
+    color: rgba(255, 255, 255, 0.3);
+    letter-spacing: 0.04em;
+  }
+}
+
+.mono {
+  font-family: 'Space Mono', monospace;
+}

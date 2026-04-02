@@ -1,0 +1,12 @@
+.hero-canvas-wrap {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: auto;
+  cursor: crosshair;
+
+  canvas {
+    width: 100% !important;
+    height: 100% !important;
+  }
+}

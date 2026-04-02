@@ -1,4 +1,4 @@
-import './SubTitle.scoped.scss';
+import './SubTitle.scss';
 
 interface Props extends ReactProps {
   title: string;

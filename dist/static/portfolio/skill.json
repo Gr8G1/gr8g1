@@ -1,0 +1,113 @@
+{
+  "skill": [
+    {
+      "Programing Languages": [
+        {
+          "name": "HTML"
+        },
+        {
+          "name": "CSS"
+        },
+        {
+          "name": "JavaScript(ES6)"
+        },
+        {
+          "name": "TypeScript"
+        },
+        {
+          "name": "Java"
+        }
+      ]
+    },
+    {
+      "Framework / Library": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Next"
+        },
+        {
+          "name": "Vue"
+        },
+        {
+          "name": "Nuxt"
+        },
+        {
+          "name": "Spring"
+        },
+        {
+          "name": "Spring Boot"
+        },
+        {
+          "name": "Spring Security"
+        },
+        {
+          "name": "Spring Data JDBC"
+        },
+        {
+          "name": "Spring Batch & Scheduler"
+        },
+        {
+          "name": "JPA"
+        }
+      ]
+    },
+    {
+      "Server": [
+        {
+          "name": "Nginx"
+        }
+      ]
+    },
+    {
+      "Tooling / DevOps": [
+        {
+          "name": "Git"
+        },
+        {
+          "name": "Docker"
+        }
+      ]
+    },
+    {
+      "Database": [
+        {
+          "name": "MySQL"
+        },
+        {
+          "name": "Redis"
+        }
+      ]
+    },
+    {
+      "Environment": [
+        {
+          "name": "AWS"
+        },
+        {
+          "name": "Firebase"
+        },
+        {
+          "name": "Linux"
+        }
+      ]
+    },
+    {
+      "Etc": [
+        {
+          "name": "Jira"
+        },
+        {
+          "name": "Notion"
+        },
+        {
+          "name": "Dooray"
+        },
+        {
+          "name": "Slack"
+        }
+      ]
+    }
+  ]
+}

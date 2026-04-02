@@ -6,11 +6,7 @@ import store from './redux/store';
 import App from './App';
 import './global';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
-
-root.render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <Provider store={store}>
     <Router>
       <App />

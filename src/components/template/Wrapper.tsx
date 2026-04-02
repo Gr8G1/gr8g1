@@ -1,4 +1,4 @@
-import './Wrapper.scoped.scss';
+import './Wrapper.scss';
 
 interface Props extends ReactProps {
   title: string;

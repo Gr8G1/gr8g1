@@ -1,4 +1,4 @@
-@import '@/assets/scss/_mixins.scss';
+@use '@/assets/scss/mixins' as *;
 
 .about { display: flex; align-items: center; justify-content: center; width: 100%; height: 512px;
   .info { display: flex; flex-direction: column; justify-content: center; align-items: center; position: relative; z-index: 2; transform: translateZ(.125px) scale(.875);

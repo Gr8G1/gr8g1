@@ -1,18 +1,25 @@
 {
   "projects": [
     {
+      "company": "팀리부뜨",
+      "url": "https://apps.apple.com/kr/app/au-w-%EB%82%98%EB%A7%8C%EC%9D%98-ai%EC%99%80-%EC%9D%BC%EC%83%81%EC%9D%84-%ED%95%A8%EA%BB%98/id6748933809",
+      "name": "AU.W",
+      "description": "B2C AI 생산성 플랫폼",
+      "language": ["React Native", "Expo", "EAS"]
+    },
+    {
       "company": "위펀",
       "url": "https://apps.apple.com/kr/app/%EC%9C%84%ED%8E%80/id6479632616",
       "name": "위펀",
-      "description": "B2B 기업 복지 서비스",
-      "language": ["React Native", "Expo", "Github Action"]
+      "description": "B2B 기업 복지 플랫폼",
+      "language": ["React Native", "Expo", "EAS"]
     },
     {
       "company": "KB국민은행",
       "url": "https://data.kbland.kr/",
       "name": "리브부동산\n데이터허브",
       "description": "부동산 데이터 플랫폼",
-      "language": ["Vue", "Vuex", "D3", "CompositionAPI", "NaverMap"]
+      "language": ["Vue", "Vuex", "D3", "NaverMap"]
     },
     {
       "url": "https://agent.kbland.kr/",

@@ -10,7 +10,7 @@ function App() {
   const location = useLocation();
 
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <Suspense key={location.pathname} >
         {RWS}
       </Suspense>

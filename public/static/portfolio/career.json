@@ -1,9 +1,15 @@
 {
   "career": [
     {
+      "company": "팀리부뜨",
+      "team": "AI",
+      "position": "FE-Developer / 파트장",
+      "date": ["2025-01", "2026-04"]
+    },
+    {
       "company": "위펀",
-      "team": "개발팀",
-      "position": "FE-Developer / Unit장",
+      "team": "개발",
+      "position": "FE-Developer / 파트장",
       "date": ["2023-07", "2024-06"]
     },
     {

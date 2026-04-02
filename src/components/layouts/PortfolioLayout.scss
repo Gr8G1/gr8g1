@@ -1,0 +1,89 @@
+@use '@/assets/scss/colors';
+
+#portfolio-wrap {
+  width: 100%;
+  min-height: 100vh;
+  background: #0a0a0a;
+  color: var(--white);
+  font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+}
+
+.portfolio-nav {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 32px;
+  background: rgba(10, 10, 10, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 100px;
+
+  @media (max-width: 768px) {
+    top: 12px;
+    padding: 10px 20px;
+
+    .nav-sections {
+      gap: 14px;
+    }
+  }
+
+  .nav-sections {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+  }
+
+  button {
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    transition: color 0.25s;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--white);
+    }
+  }
+}
+
+#portfolio-main {
+  width: 100%;
+}
+
+.portfolio-footer {
+  position: relative;
+  padding: 40px 48px;
+  text-align: center;
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.2);
+  letter-spacing: 0.05em;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(184, 176, 247, 0.3), transparent);
+  }
+
+  @media (max-width: 768px) {
+    padding: 32px 20px;
+  }
+
+  .mono {
+    font-family: 'Space Mono', monospace;
+  }
+}

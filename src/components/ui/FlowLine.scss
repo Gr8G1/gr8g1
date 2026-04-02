@@ -1,0 +1,40 @@
+.flow-line {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 50vw;
+  height: 100vh;
+  pointer-events: none;
+
+  .flow-path {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .flow-main {
+    stroke: rgba(255, 255, 255, 0.14);
+    stroke-width: 0.15;
+  }
+
+  .flow-sub {
+    stroke: rgba(255, 255, 255, 0.08);
+    stroke-width: 0.1;
+  }
+
+  .flow-branch {
+    stroke: rgba(255, 255, 255, 0.06);
+    stroke-width: 0.08;
+  }
+
+  .flow-accent {
+    stroke: rgba(255, 255, 255, 0.04);
+    stroke-width: 0.06;
+  }
+
+  @media (max-width: 768px) {
+    width: 40vw;
+    opacity: 0.5;
+  }
+}

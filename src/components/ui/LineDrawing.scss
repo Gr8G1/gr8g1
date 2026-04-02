@@ -1,0 +1,45 @@
+.line-drawing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 50%;
+  height: 100%;
+  pointer-events: none;
+
+  .draw-line {
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .line-main {
+    stroke: rgba(255, 255, 255, 0.18);
+    stroke-width: 1.5;
+  }
+
+  .line-secondary {
+    stroke: rgba(255, 255, 255, 0.12);
+    stroke-width: 1;
+  }
+
+  .line-branch {
+    stroke: rgba(255, 255, 255, 0.1);
+    stroke-width: 0.8;
+  }
+
+  .line-thin {
+    stroke: rgba(255, 255, 255, 0.08);
+    stroke-width: 0.6;
+  }
+
+  .line-accent {
+    stroke: rgba(255, 255, 255, 0.06);
+    stroke-width: 0.5;
+  }
+
+  @media (max-width: 768px) {
+    width: 40%;
+    opacity: 0.6;
+  }
+}

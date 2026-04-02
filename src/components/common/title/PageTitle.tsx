@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import { AiFillLeftCircle } from 'react-icons/ai';
-import './PageTitle.scoped.scss';
+import './PageTitle.scss';
 
 interface Props extends ReactProps {
   title: string;
